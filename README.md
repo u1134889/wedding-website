@@ -43,7 +43,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] Save those environment variables in Vercel
 
 ### Inside of application
-- [ ] Set up Tailwind with the project
+- [X] Set up Tailwind with the project
 - [ ] Component with first image
 - [ ] Component with the image and text
 - [ ] Transition between info and form
