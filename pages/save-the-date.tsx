@@ -1,25 +1,35 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { DownArrow } from '../components/DownArrow';
 import sitting from '../public/engagement-photos/sitting-together-min.jpg';
 import holding from '../public/engagement-photos/standing-holding-min.jpg';
 
 export default function SaveTheDate() {
   return (
-    <div className="container mx-auto px-2">
+    <div className="scroll-smooth">
       <Head>
         <title>Save the Date</title>
         <meta name="description" content="Save the date for Sitjar-Rogosienski wedding 2024" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="py-8">
+        <div className="h-screen flex items-center relative overflow-hidden">
           <Image
             src={sitting}
             alt="Venisse and Justin sitting together in Utah mountains"
             placeholder="blur"
+            className="object-cover min-h-full min-w-full"
           />
+          <div className="absolute bottom-0 left-0 right-0">
+            <div className="bg-gradient-to-t from-[rgba(0,0,0,0.75)] py-40"></div>
+            <div className="py-8 bg-[rgba(0,0,0,0.75)]">
+            <a href="#text-image" className="text-white text-6xl">
+              <DownArrow className="mx-auto h-10 w-10"/>
+            </a>
+            </div>
+          </div>
         </div>
-        <div className="relative my-4">
+        <div id="text-image" className="relative my-4 container mx-auto">
           <div className="xl:absolute xl:top-0 xl:left-0 xl:right-0">
             <div className="xl:bg-[rgba(0,0,0,0.75)]">
               <h1 className="font-bold text-6xl text-center">Save The Date</h1>
