@@ -13,19 +13,19 @@ export default function SaveTheDate() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="h-screen flex items-center relative overflow-hidden">
+        <div className="h-screen flex items-center overflow-hidden">
           <Image
             src={sitting}
             alt="Venisse and Justin sitting together in Utah mountains"
             placeholder="blur"
-            className="object-cover min-h-full min-w-full"
+            className="object-cover min-h-full min-w-full absolute bottom-0 2xl:static"
           />
           <div className="absolute bottom-0 left-0 right-0">
             <div className="bg-gradient-to-t from-[rgba(0,0,0,0.75)] py-40"></div>
             <div className="py-8 bg-[rgba(0,0,0,0.75)]">
-            <a href="#text-image" className="text-white text-6xl">
-              <DownArrow className="mx-auto h-10 w-10"/>
-            </a>
+              <a href="#text-image" className="text-white text-6xl">
+                <DownArrow className="mx-auto h-10 w-10" />
+              </a>
             </div>
           </div>
         </div>
